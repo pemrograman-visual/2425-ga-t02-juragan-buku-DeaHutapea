@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="4.2">
+    <attributes>
+        <attribute name="name" value="T01"/>
+        <attribute name="authors" value="USER"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2024-09-27 10:44:32 AM"/>
+        <attribute name="created" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0wNjsxMDowODo0NCBBTTsyNTkx"/>
+        <attribute name="edited" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0yNzsxMDoyMDowMSBBTTszOzI2OTE="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtVlRCSTNKVFU7MjAyNC0wOS0yNzsxMDo0NDozMiBBTTszOzI5MDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="ISBN, JUDUL, PENULIS, PENERBIT, FORMAT, KETERANGAN" type="String" array="False" size=""/>
+            <declare name="TAHUNTERBIT, STOK" type="Integer" array="False" size=""/>
+            <declare name="HARGA, MINIMUMMARGIN, RATING" type="Real" array="False" size=""/>
+            <input variable="ISBN"/>
+            <input variable="JUDUL"/>
+            <input variable="PENULIS"/>
+            <input variable="TAHUNTERBIT"/>
+            <input variable="PENERBIT"/>
+            <input variable="FORMAT"/>
+            <input variable="HARGA"/>
+            <input variable="MINIMUMMARGIN"/>
+            <input variable="STOK"/>
+            <input variable="RATING"/>
+            <if expression="RATING&gt;=4.7">
+                <then>
+                    <assign variable="KETERANGAN" expression="&quot;BestPick&quot;"/>
+                </then>
+                <else>
+                    <if expression="RATING&gt;=4.5">
+                        <then>
+                            <assign variable="KETERANGAN" expression="&quot;MustRead&quot;"/>
+                        </then>
+                        <else>
+                            <if expression="RATING&gt;=4.0">
+                                <then>
+                                    <assign variable="KETERANGAN" expression="&quot;Recommended&quot;"/>
+                                </then>
+                                <else>
+                                    <if expression="RATING&gt;=3.0">
+                                        <then>
+                                            <assign variable="KETERANGAN" expression="&quot;Average&quot;"/>
+                                        </then>
+                                        <else>
+                                            <assign variable="KETERANGAN" expression="&quot;Low&quot;"/>
+                                        </else>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="ISBN&amp;&quot;|&quot;&amp;JUDUL&amp;&quot;|&quot;&amp;PENULIS&amp;&quot;|&quot;&amp;TAHUNTERBIT&amp;&quot;|&quot;&amp;PENERBIT&amp;&quot;|&quot;&amp;FORMAT&amp;&quot;|&quot;&amp;HARGA&amp;&quot;|&quot;&amp;MINIMUMMARGIN&amp;&quot;|&quot;&amp;STOK&amp;&quot;|&quot;&amp;RATING&amp;&quot;|&quot;&amp;KETERANGAN" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
