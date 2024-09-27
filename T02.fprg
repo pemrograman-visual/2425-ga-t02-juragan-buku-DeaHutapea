@@ -4,10 +4,10 @@
         <attribute name="name" value="T01"/>
         <attribute name="authors" value="USER"/>
         <attribute name="about" value=""/>
-        <attribute name="saved" value="2024-09-27 11:14:07 AM"/>
+        <attribute name="saved" value="2024-09-27 11:31:53 AM"/>
         <attribute name="created" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0wNjsxMDowODo0NCBBTTsyNTkx"/>
         <attribute name="edited" value="VVNFUjtMQVBUT1AtNVRBNjA4VTE7MjAyNC0wOS0yNzsxMDoyMDowMSBBTTszOzI2OTE="/>
-        <attribute name="edited" value="VXNlcjtMQVBUT1AtVlRCSTNKVFU7MjAyNC0wOS0yNzsxMToxNDowNyBBTTs0OzI5MDc="/>
+        <attribute name="edited" value="VXNlcjtMQVBUT1AtVlRCSTNKVFU7MjAyNC0wOS0yNzsxMTozMTo1MyBBTTs1OzI5MDg="/>
     </attributes>
     <function name="Main" type="None" variable="">
         <parameters/>
@@ -27,12 +27,12 @@
             <input variable="RATING"/>
             <if expression="RATING&gt;=4.7">
                 <then>
-                    <assign variable="KETERANGAN" expression="&quot;BestPick&quot;"/>
+                    <assign variable="KETERANGAN" expression="&quot;Best Pick&quot;"/>
                 </then>
                 <else>
                     <if expression="RATING&gt;=4.5">
                         <then>
-                            <assign variable="KETERANGAN" expression="&quot;MustRead&quot;"/>
+                            <assign variable="KETERANGAN" expression="&quot;Must Read&quot;"/>
                         </then>
                         <else>
                             <if expression="RATING&gt;=4.0">

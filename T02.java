@@ -23,10 +23,10 @@ public class T02 {
         sTOK = Integer.parseInt(input.nextLine());
         rATING = Double.parseDouble(input.nextLine());
         if (rATING >= 4.7) {
-            kETERANGAN = "BestPick";
+            kETERANGAN = "Best Pick";
         } else {
             if (rATING >= 4.5) {
-                kETERANGAN = "MustRead";
+                kETERANGAN = "Must Read";
             } else {
                 if (rATING >= 4.0) {
                     kETERANGAN = "Recommended";
