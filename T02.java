@@ -15,13 +15,13 @@ public class T02 {
         iSBN = input.nextLine();
         jUDUL = input.nextLine();
         pENULIS = input.nextLine();
-        tAHUNTERBIT = input.nextInt();
+        tAHUNTERBIT = Integer.parseInt(input.nextLine());
         pENERBIT = input.nextLine();
         fORMAT = input.nextLine();
-        hARGA = input.nextDouble();
-        mINIMUMMARGIN = input.nextDouble();
-        sTOK = input.nextInt();
-        rATING = input.nextDouble();
+        hARGA = Double.parseDouble(input.nextLine());
+        mINIMUMMARGIN = Double.parseDouble(input.nextLine());
+        sTOK = Integer.parseInt(input.nextLine());
+        rATING = Double.parseDouble(input.nextLine());
         if (rATING >= 4.7) {
             kETERANGAN = "BestPick";
         } else {
